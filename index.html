@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Player</title>
+</head>
+<body>
+    <h1>Listen to My Audio</h1>
+    <audio id="audioPlayer" controls>
+        <source src="your-audio-file.wav" type="audio/wav">
+        Your browser does not support the audio element.
+    </audio>
+    <div>
+        <button onclick="document.getElementById('audioPlayer').playbackRate = 0.5;">0.5x Speed</button>
+        <button onclick="document.getElementById('audioPlayer').playbackRate = 1;">Normal Speed</button>
+        <button onclick="document.getElementById('audioPlayer').playbackRate = 1.5;">1.5x Speed</button>
+        <button onclick="document.getElementById('audioPlayer').playbackRate = 2;">2x Speed</button>
+    </div>
+</body>
+</html>
